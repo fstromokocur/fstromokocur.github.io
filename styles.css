@@ -1,0 +1,314 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+
+}
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #DFF6FF;
+}
+
+.main{
+	flex-grow: 1;
+	display: flex;
+}
+.video{
+	display: flex;
+	box-sizing:border-box;
+	margin: 7.5px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+video {
+  max-width: 75%;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px;
+  outline: #000000 solid 1px;
+
+}
+
+.sluzby, .omne, .objednat, #h1{
+	padding: 20px 0px 20px 20px;
+
+
+}
+.sluzby, .omne, .objednat p{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.sluzby img {
+	border-radius: 5px;
+	outline: #000000 solid 1px;
+
+}
+#h1{
+	display: flex;
+	text-align: left;
+	justify-content: left;
+}
+
+
+.sluzby {
+	box-sizing: border-box;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 33% 33% 33% ;
+	grid-template-rows: 50% 50%;
+
+}
+.ponuka1, .ponuka2, .ponuka3{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+
+}
+
+#copyright{
+
+    background-color: #06283D;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} 
+ 
+.header{
+
+    background: #256D85;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-bottom: solid 1.5px #b5bec3;
+}
+
+.header h3{
+  color: #ffffff;
+  font: normal 34px 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.header h3 span {
+    color: #d4e514;
+
+}
+
+#onload{
+	background-color: #06283D;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 100px;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	animation: 3s 0s 1 slideup;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+.footer-distributed{
+
+	background: #47B5FF;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	text-align: left;
+	font: bold 16px 'Poppins',sans-serif;
+	padding: 20px 20px;
+  	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 40px;
+
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color: #ffffff;
+	font: normal 36px 'Poppins', sans-serif;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color: #d4e514;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	
+	color: #000000;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 8px 13px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+
+
+.footer-distributed .footer-center p a{
+	color:  rgb(0, 0, 0);
+	text-decoration: none;;
+}
+
+
+
+
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color:  #d4e514;
+	border-radius: 2px;
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 3px;
+}
+
+.footer-distributed .footer-icons a:hover{
+	background-color:  #47B5FF;
+	transition: 0.3s;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+
+	.sluzby {
+		grid-template-columns: auto ;
+		grid-template-rows: auto;
+
+	}
+	video{
+		max-width:100%;
+	}
+	*{
+		text-align: center;
+		padding: 0;
+	}
+	.sluzby, .omne, .objednat, #h1{
+		padding: 0;
+
+	}
+	#h1{
+		justify-content: center;
+
+	}
+	#onload{
+		font-size: 50px;
+	}
+}
+
+@keyframes slideup {
+	0% {
+		transform: translateY(0%);
+		opacity: 1;
+		z-index: 1;
+	}
+	35% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	  z-index: 1;
+	}
+	100% {
+	  transform: translateY(-100%);
+	  opacity: 1;
+	  z-index: 1;
+	  
+	}
+  }
+

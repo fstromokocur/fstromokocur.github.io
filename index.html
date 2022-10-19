@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-
-
 <script src="https://kit.fontawesome.com/fbabf105c8.js" crossorigin="anonymous"></script>
+<script>
+   const video = document.querySelector('video');
+
+
+</script>
 <body>
 
     <h1 style="opacity:0; z-index:-50;text-align: center;" id="onload" >3DVýrobky<span style="color:#d4e514;">.sk</span></h1>
@@ -23,8 +26,8 @@
 
    <main class="main">
     
-    <div class="video">
-        <video src="video.mp4" autoplay loop>Video</video>
+   <div class="video">
+        <video id="vid" src="video.mp4" autoplay loop muted>Video</video>
     </div>
    </main>
 
@@ -34,16 +37,16 @@
     <div class="sluzby">
         <div class="ponuka1">
             <p>3D scan postavy</p>
-            <img class="lightbox" src="3ds.jpg" width="250px" alt="3D scan">
+            <a href="#sken"><img  src="3ds.jpg" width="250px" alt="3D scan"></a>
         </div>
         <div class="ponuka2">
             <p>3D obraz, kľúčenka z bežnej fotografie</p>
-            <img class="lightbox" src="vw.jpg" width="250px" alt="Kľúčenka">
-            <img class="lightbox" src="obraz.jpg" width="250px" alt="3D obraz">
+            <a href="#klucenka"><img src="vw.jpg" width="250px" alt="Kľúčenka"></a>
+            <a href="#obraz"><img src="obraz.jpg" width="250px" alt="3D obraz"></a>
         </div>
         <div class="ponuka3">
             <p>Tlač čohokoľvek buď z vlastného návrhu alebo návrh vyhľadám ja</p>
-            <img class="lightbox" src="btmn.jpg" width="250px"alt="Čokoľvek z vlastného návrhu">
+           <a href="#cokolvek"><img src="btmn.jpg" width="250px"alt="Čokoľvek z vlastného návrhu"></a>
         </div>
     </div>
     <div class="objednat">
@@ -55,6 +58,19 @@
         <h1>Niečo o mne</h1>
         <p>Rozhodol som sa venovať 3D tlači tento rok v auguste. Celé to začalo tak že som dostal na narodeniny od mojej ženy moju prvú 3D tlačiareň Prusa Mini. Natoľko ma princíp 3D tlače nadchol že som sa rozhodol tomu venovať a vzdelávať. Veľmi ma zaujalo to že sa dá použiť recyklovaný materiál na to aby sa z neho vyrobilo niečo užitočnejšie. Mám v pláne do budúcna filament vyrábať sám pre svoje použitie.</p> </div>
 
+
+    <a href="#a" class="lightbox" id="sken">
+        <span style="background-image: url('3ds.jpg')"></span>
+    </a>
+    <a href="#a" class="lightbox" id="klucenka">
+        <span style="background-image: url('vw.jpg')"></span>
+    </a>     
+    <a href="#a" class="lightbox" id="obraz">
+        <span style="background-image: url('obraz.jpg')"></span>
+    </a>     
+    <a href="#a" class="lightbox" id="cokolvek">
+        <span style="background-image: url('btmn.jpg')"></span>
+    </a>     
 
    
     <footer class="footer-distributed">

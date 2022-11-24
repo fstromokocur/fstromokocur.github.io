@@ -1,10 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+   
 }
 
 body {
     font-family: 'Inter', sans-serif;
+    text-align: center;
+
 }
 header {
     background-color:#DADAD9 ;
@@ -16,6 +19,7 @@ header {
 
 
 header .logo img {
+
     width: 20rem;
     height: auto;
 }
@@ -28,6 +32,7 @@ footer {
 	align-items: flex-start;
 	justify-content: space-around;
     padding: 1rem ;
+    text-align: left !important;
     
 }
 
@@ -104,33 +109,71 @@ main h4 {
     text-align: center;
     margin-bottom: 3rem;
 }
+.sluzby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .sluzby li {
     
-    padding: 1rem;
+    padding: 0.8rem;
     color:#EDE6E3 ;
     list-style-type: none;
-    margin-bottom: 0.7rem;
+
 }
 
 .sluzby img {
     margin: 1rem;
-    max-width: 45rem;
+    max-width: 50rem;
+    max-height: 30rem;
+    border-radius: 0.5rem;
 
 }
 .sluzby img:hover, .trenuje img:hover {
     transform: scale(1.05);
     transition: 0.3s;
+    cursor: pointer;
+}
+.trenuje a , .sluzby a{
+    cursor: default;
+}
+.trenuje {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+    
+
+
+}
+.trener {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    background-color:#DADAD9 ;
+    color: #4E2D2D;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 30rem;
+    max-width: 40rem;
+    justify-self: center;
+    align-self: center;
+
 }
 
+
+
 .trenuje h2 {
-    margin-left : 1rem;
-    margin-top: 1rem;
+   
     margin-bottom: 0.2rem;
 }
 .trenuje img {
-    margin: 1rem;
-    max-width: 40rem;
+    margin: 0.5rem;
+    max-width: 22rem;
+    max-height: 22rem;
+    border-radius: 0.5rem;
 }
 
 #onload{
@@ -165,17 +208,17 @@ main h4 {
 	  
 	}
   }
-@media (max-width: 850px) {
-    .najdete iframe {
-        width: 30rem; ;
-        height: 25rem;
-    }
-}
-@media (max-width: 505px) {
-    .najdete iframe {
-        width: 20rem; ;
-        height: 15rem;
-    }
+
+.sluzbyfoto {
+    background-color:#DADAD9 ;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100rem;
+
+
+    
+
 }
 
 
@@ -185,9 +228,7 @@ main h4 {
        
        
 }
-    .trenuje img {
-    max-width: 25rem;
-}
+   
 #onload img {
     width: 20rem;
     height: auto;
@@ -202,27 +243,12 @@ footer {
 .footer-left {
     margin-bottom: 1rem;
 }
-*{
-  text-align: center;
-}
-.trenuje h2 {
-    margin-left: 0rem;
-}
+
+
     
 }
 
-@media (max-width: 450px) {
-    .sluzby img {
-    max-width: 17.5rem;
-       
-       
-}
-    .trenuje img {
-    
-    max-width: 17.5rem;
-}
 
-}
 
 .lightbox {
 	display: none;
@@ -258,12 +284,94 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    margin: 1rem;
     color:#EDE6E3 ;
     text-align: center;
     margin-bottom: 2rem;
     font-size: larger;
+    height: 100%;
+
   }
-  .najdete h1 {
+  .najdete h2 {
     margin-bottom: 1rem;
   }
+
+.najdete iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        height: 50rem;
+ }
+
+@media (max-width: 900px) {
+    .najdete iframe {
+
+        height: 30rem;
+ }
+ *{
+    text-align: center;
+  }
+}
+    
+@media (max-width: 450px) {
+    .sluzby img {
+    max-width: 17.5rem;
+       
+       
+}
+    .trenuje img {
+    
+    max-width: 17.5rem;
+}
+    .najdete iframe {
+        height: 22rem;
+    }
+
+     
+    }
+
+
+
+@media (max-width: 1460px) {
+    .sluzbyfoto {
+        max-width: 45rem;
+    }
+
+
+}
+@media (max-width: 1600px) {
+    .trenuje {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 535px) {
+    .trener {
+        min-width: 20rem;
+    }
+    }
+
+
+@media (max-width: 356px) {
+    .trener {
+        min-width: 5rem;
+       
+    }
+    .trener img {
+        max-width: 12rem;
+    }
+    .sluzbyfoto {
+        max-width: 20rem;
+    }
+    .sluzby img {
+        max-width: 12rem;
+    }
+    header .logo img {
+        width: 15rem;
+    }
+    #onload img {
+        width: 15rem;
+    }
+}

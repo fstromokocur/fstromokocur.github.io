@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <script src="https://kit.fontawesome.com/fbabf105c8.js" crossorigin="anonymous"></script>
 <body>
+
+
     <div id="onload" style="opacity:0; z-index:-50;">
         <img src="logo.svg" ></img>
     </div>
@@ -23,7 +26,7 @@
     </header>
     <main>
         <div class="vitajte">
-            <h3>Vitajte na stránkach nášho jediného súkromného Fitness centra v Skalici. Naše fitko sme začali budovať v roku 2013 a pomaličky sme ho vyšperkovali do dnešnej podoby.
+            <h3 >Vitajte na stránkach nášho jediného súkromného Fitness centra v Skalici. Naše fitko sme začali budovať v roku 2013 a pomaličky sme ho vyšperkovali do dnešnej podoby.
                 Nejedná sa o klasické Fitness centrum, u nás si musíte cvičenie vopred objednať na určitú hodinu, ak sa jedná o individuálne cvičenie. Alebo môžete navštíviť naše skupinové cvičenia kde je vždy dobrá nálada.</h3>
         </div>
         <h1>V našom fitku ponúkame tieto služby:</h1>
@@ -34,7 +37,7 @@
                 <li>2. Ponúkame poradenstvo v oblasti chudnutia, spevnovania postavy, naučenie ako cvičiť</li>
                 <li>3. Môžete si prenajať priestor len pre Vás samostatne (individuálne cvičenie) alebo pre Vašu skupinu.</li>
             </ul>
-            <div>
+            <div class="sluzbyfoto">
                 <a href="#fitko1"><img src="image1.jpeg" alt="Fitko"></a>
                 <a href="#fitko2"><img src="image2.jpeg" alt="Fitko"></a>
             </div>
@@ -44,30 +47,23 @@
 
         <h1>A kto vlastne u nás trénuje?</h1>
         <div class="trenuje">
-            <div>
+            <div class="trener">
+                <a href="#majitel"><img src="image6.jpeg" alt="Ivajlo Totev - majiteľ"></a>
                 <h2>Ivajlo Totev - majiteľ</h2>
-                <div>
-                    <a href="#majitel1"><img src="image3.jpeg" alt="Ivajlo Totev - majiteľ"></a>
-                    <a href="#majitel2"><img src="image6.jpeg" alt="Ivajlo Totev - majiteľ"></a>
-                </div>
-                
             </div>
-            <div>
-                <h2>Igor Špetta - Tréner</h2>
+            <div class="trener">
                 <a href="#trener"><img src="image7.jpeg" alt="Igor Špetta - Tréner"></a>
+                <h2>Igor Špetta - Tréner</h2>
             </div>
-            <div>
+            <div class="trener">
+                <a href="#trenerka"><img  src="image4.jpeg" alt="Lubka Špettová - Trénerka"></a>
                 <h2>Lubka Špettová - Trénerka</h2>
-                <div>
-                    <a href="#trenerka1"><img src="image4.jpeg" alt="Lubka Špettová - Trénerka"></a>
-                    <a href="#trenerka2"><img src="image5.jpeg" alt="Lubka Špettová - Trénerka"></a>
-                </div>
             </div>
 
         </div>
         <div class="najdete">
-            <h1>Kde nás nájdete</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.5269840576766!2d17.229218!3d48.84816060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47133053ffa26651%3A0x845d11fde6247dc4!2sKomensk%C3%A9ho%2038%2C%20909%2001%20Skalica!5e0!3m2!1ssk!2ssk!4v1668677550490!5m2!1ssk!2ssk" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Kde nás nájdete</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.5269840576766!2d17.229218!3d48.84816060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47133053ffa26651%3A0x845d11fde6247dc4!2sKomensk%C3%A9ho%2038%2C%20909%2001%20Skalica!5e0!3m2!1ssk!2ssk!4v1668677550490!5m2!1ssk!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         
         
@@ -81,21 +77,17 @@
     <a href="##" class="lightbox" id="fitko2">
         <span style="background-image: url('image2.jpeg')"></span>
     </a>     
-    <a href="##" class="lightbox" id="majitel1">
-        <span style="background-image: url('image3.jpeg')"></span>
-    </a>  
-    <a href="##" class="lightbox" id="majitel2">
+
+    <a href="##" class="lightbox" id="majitel">
         <span style="background-image: url('image6.jpeg')"></span>
     </a> 
     <a href="##" class="lightbox" id="trener">
         <span style="background-image: url('image7.jpeg')"></span>
     </a> 
-    <a href="##" class="lightbox" id="trenerka1">
+    <a href="##" class="lightbox" id="trenerka">
         <span style="background-image: url('image4.jpeg')"></span>
     </a> 
-    <a href="##" class="lightbox" id="trenerka2">
-        <span style="background-image: url('image5.jpeg')"></span>
-    </a> 
+
     
     </lightbox>
 
@@ -136,5 +128,6 @@
     <div id="copyright">
        <p>&copy; Fitness Klub 2022</p>
     </div>
+
 </body>
 </html>

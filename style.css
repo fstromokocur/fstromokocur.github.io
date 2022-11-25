@@ -128,12 +128,14 @@ main h4 {
     max-width: 50rem;
     max-height: 30rem;
     border-radius: 0.5rem;
+    border: #4E2D2D solid 0.5rem;
 
 }
 .sluzby img:hover, .trenuje img:hover {
     transform: scale(1.05);
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0rem 2rem 2rem;
 }
 .trenuje a , .sluzby a{
     cursor: default;
@@ -171,9 +173,12 @@ main h4 {
 }
 .trenuje img {
     margin: 0.5rem;
+    margin-bottom: 1rem;
     max-width: 22rem;
     max-height: 22rem;
     border-radius: 0.5rem;
+    border: #4E2D2D solid 0.5rem;
+    
 }
 
 #onload{
